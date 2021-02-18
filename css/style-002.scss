@@ -117,6 +117,22 @@ a {
 
 }
 
+// PC version setting
+@media(min-width: 900px) {
+  .site img {
+    width: 59px;
+    margin-right: 18px;
+  }
+
+  .site .corp {
+    font-size: 20px;
+  }
+
+  .site .desc {
+    font-size: 12px;
+  }
+}
+
 // navigation button
 
 .nav-button {

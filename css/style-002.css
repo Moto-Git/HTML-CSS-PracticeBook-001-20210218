@@ -99,6 +99,19 @@ a::hover {
   line-height: 1.4;
 }
 
+@media (min-width: 900px) {
+  .site img {
+    width: 59px;
+    margin-right: 18px;
+  }
+  .site .corp {
+    font-size: 20px;
+  }
+  .site .desc {
+    font-size: 12px;
+  }
+}
+
 .nav-button {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
