@@ -282,4 +282,33 @@ not all and (-ms-high-contrast: none) {
 // service
 .service {
   padding: 67px 0;
+  text-align: center;
+
+  & h2 {
+    display: inline-block;
+    margin-bottom: 16px;
+    padding-bottom: 9px;
+
+    // dotted under line 
+    border-bottom: dotted 2px currentColor;
+
+    font-size: 24px;
+    color: #2e5180;
+  }
+
+  & h2+p {
+    color: #2e5180;
+    font-size: 16px;
+  }
+}
+
+// .service PC setting
+@media (min-width: 900px) {
+  .service {
+    padding: 95px 0 87px;
+  }
+
+  .service h2 {
+    font-size: 36px;
+  }
 }
