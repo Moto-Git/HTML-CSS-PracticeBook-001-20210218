@@ -4,6 +4,59 @@ $cMiddleGray: #707f89;
 $cGray: #eef4f8;
 $cWhite: #ffffff;
 
+// CSS 基本設定
+
 * {
-  max-width: 1240px;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+// Reset Normalize Sanitize
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+//  ~~~~~~~~~~~~~~~~~~~~~~~
+
+// header
+
+.site {
+  display: flex;
+  align-items: center;
+
+  & img {
+    width: 42px;
+    margin-right: 10px;
+  }
+
+  & .corp {
+    color: #333;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 1.4;
+  }
+
+  & .desc {
+    color: #707f89;
+    font-size: 10px;
+    line-height: 1.4;
+  }
 }
