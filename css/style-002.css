@@ -147,4 +147,10 @@ a::hover {
   background-position: center;
   background-size: cover;
 }
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
 /*# sourceMappingURL=style-002.css.map */
