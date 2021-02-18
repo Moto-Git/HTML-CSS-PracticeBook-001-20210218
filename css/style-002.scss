@@ -10,6 +10,11 @@ $cWhite: #ffffff;
   font-family: "Noto Sans JP", sans-serif;
 }
 
+.container {
+  width: 84%;
+  margin: 0 auto;
+}
+
 // Reset Normalize Sanitize
 body,
 h1,
@@ -36,10 +41,6 @@ a {
   }
 }
 
-
-
-// header & handburger menu
-
 .sr-only {
   border: 0;
   clip: rect(0 0 0 0);
@@ -51,9 +52,20 @@ a {
   width: 1px;
 }
 
+// header & handburger menu
+
+
+
 //  ~~~~~~~~~~~~~~~~~~~~~~~
 
 // header
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 74px;
+}
+
 
 .site {
   display: flex;
@@ -79,6 +91,8 @@ a {
 
 }
 
+// navigation button
+
 .nav-button {
   box-sizing: content-box;
   padding: 0;
@@ -101,7 +115,7 @@ a {
     transform: translateY(5px);
   }
 
-  &::brefore {
+  &::before {
     transform: translateY(-5px);
     box-shadow: 0 6px currentColor;
   }

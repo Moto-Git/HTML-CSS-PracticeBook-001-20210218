@@ -2,6 +2,11 @@
   font-family: "Noto Sans JP", sans-serif;
 }
 
+.container {
+  width: 84%;
+  margin: 0 auto;
+}
+
 body,
 h1,
 h2,
@@ -34,6 +39,19 @@ a::hover {
   padding: 0;
   position: absolute;
   width: 1px;
+}
+
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 74px;
 }
 
 .site {
@@ -85,7 +103,7 @@ a::hover {
           transform: translateY(5px);
 }
 
-.nav-button::brefore {
+.nav-button::before {
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
   -webkit-box-shadow: 0 6px currentColor;
