@@ -140,4 +140,11 @@ a::hover {
   -webkit-box-shadow: 0 6px currentColor;
           box-shadow: 0 6px currentColor;
 }
+
+.hero {
+  height: 400px;
+  background-image: url(../img/hero.jpg);
+  background-position: center;
+  background-size: cover;
+}
 /*# sourceMappingURL=style-002.css.map */
