@@ -12,6 +12,13 @@
   max-width: 1240px;
 }
 
+@media (min-width: 900px) {
+  .container {
+    width: 91%;
+    max-width: 1240px;
+  }
+}
+
 body,
 h1,
 h2,
@@ -59,8 +66,10 @@ a::hover {
   height: 74px;
 }
 
-.header .container {
-  height: 100px;
+@media (min-width: 900px) {
+  .header .container {
+    height: 100px;
+  }
 }
 
 .site {
