@@ -199,4 +199,11 @@ a::hover {
     margin-bottom: 22px;
   }
 }
+
+@media (-ms-high-contrast: none), not all and (-ms-high-contrast: none) {
+  .hero img {
+    width: calc((100vw - 17px) * 0.84);
+    max-width: 637.78px;
+  }
+}
 /*# sourceMappingURL=style-002.css.map */

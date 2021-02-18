@@ -224,3 +224,12 @@ a {
     margin-bottom: 22px;
   }
 }
+
+// hero img IE version setting
+@media(-ms-high-contrast: none),
+not all and (-ms-high-contrast: none) {
+  .hero img {
+    width: calc((100vw - 17px) * 0.84);
+    max-width: 637.78px;
+  }
+}
