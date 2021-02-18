@@ -117,7 +117,7 @@ a {
 
 }
 
-// PC version setting
+// header PC version setting
 @media(min-width: 900px) {
   .site img {
     width: 59px;
@@ -207,4 +207,20 @@ a {
     margin-bottom: 15px;
   }
 
+}
+
+// hero img PC version setting
+@media(min-width: 900px) {
+  .hero {
+    height: 700px;
+  }
+
+  .hero .catch {
+    padding: 47px 0 44px;
+  }
+
+  .hero p {
+    font-size: 16px;
+    margin-bottom: 22px;
+  }
 }

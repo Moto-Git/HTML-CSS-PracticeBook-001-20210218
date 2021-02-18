@@ -186,4 +186,17 @@ a::hover {
   color: #2e5180;
   margin-bottom: 15px;
 }
+
+@media (min-width: 900px) {
+  .hero {
+    height: 700px;
+  }
+  .hero .catch {
+    padding: 47px 0 44px;
+  }
+  .hero p {
+    font-size: 16px;
+    margin-bottom: 22px;
+  }
+}
 /*# sourceMappingURL=style-002.css.map */
