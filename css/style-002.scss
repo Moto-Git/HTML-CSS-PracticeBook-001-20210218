@@ -10,9 +10,24 @@ $cWhite: #ffffff;
   font-family: "Noto Sans JP", sans-serif;
 }
 
+// overall width 
 .container {
   width: 84%;
   margin: 0 auto;
+}
+
+// container width 1240px
+.container {
+  width: 91%;
+  max-width: 1240px;
+}
+
+// min-width setting
+@media (min-width: 900px) {
+  .container {
+    width: 91%;
+    max-width: 1240px;
+  }
 }
 
 // Reset Normalize Sanitize
@@ -33,14 +48,18 @@ figure {
 // link
 
 a {
+
   color: inherit;
   text-decoration: none;
 
+  // hover setting
   &::hover {
     opacity: 0.8;
   }
 }
 
+
+// header & handburger menu
 .sr-only {
   border: 0;
   clip: rect(0 0 0 0);
@@ -52,25 +71,32 @@ a {
   width: 1px;
 }
 
-// header & handburger menu
-
-
 
 //  ~~~~~~~~~~~~~~~~~~~~~~~
 
 // header
 .header .container {
+  // side by side
   display: flex;
   justify-content: space-between;
+  // center
   align-items: center;
   height: 74px;
 }
 
+// header height & min-width
+@media (min-width: 900px) {
+  .header .container {
+    height: 100px;
+  }
+}
 
 .site {
+  // side by side
   display: flex;
   align-items: center;
 
+  // img size & margin
   & img {
     width: 42px;
     margin-right: 10px;
@@ -91,21 +117,39 @@ a {
 
 }
 
+// header PC version setting
+@media(min-width: 900px) {
+  .site img {
+    width: 59px;
+    margin-right: 18px;
+  }
+
+  .site .corp {
+    font-size: 20px;
+  }
+
+  .site .desc {
+    font-size: 12px;
+  }
+}
+
 // navigation button
 
 .nav-button {
+  // button setting
   box-sizing: content-box;
   padding: 0;
   outline: none;
   border: none;
   background: none;
 
-  // button setting
+  // button size & color
   width: 20px;
   height: 14px;
   cursor: pointer;
   color: #2e5180;
 
+  // hamburger button view
   &::before,
   &::after {
     content: '';
@@ -119,4 +163,205 @@ a {
     transform: translateY(-5px);
     box-shadow: 0 6px currentColor;
   }
+
+  // hamburger button view end
 }
+
+// hero
+
+.hero {
+  // hero img setting
+  height: 400px;
+  background-image: url(../img/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+
+  // catch copy img setthing
+  & .catch {
+    flex: auto;
+    align-self: flex-end;
+    padding: 33px 0;
+    background-color: rgba(255, 255, 255, 0.76);
+  }
+
+  // catch copy centering
+  & .container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    line-height: 1.3;
+  }
+
+  // img size setting
+  & img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+  }
+
+  // catch copy p setting
+  & p {
+    font-size: 14px;
+    color: #2e5180;
+    margin-bottom: 15px;
+  }
+
+}
+
+// hero img PC version setting
+@media(min-width: 900px) {
+  .hero {
+    height: 700px;
+  }
+
+  .hero .catch {
+    padding: 47px 0 44px;
+  }
+
+  .hero p {
+    font-size: 16px;
+    margin-bottom: 22px;
+  }
+}
+
+// hero img IE version setting
+@media(-ms-high-contrast: none),
+not all and (-ms-high-contrast: none) {
+  .hero img {
+    width: calc((100vw - 17px) * 0.84);
+    max-width: 637.78px;
+  }
+}
+
+// message
+.message {
+  // view easy to see
+  padding: 67px 0;
+
+  // message setting
+  background-color: #2e5180;
+  color: #fff;
+
+  & h2 {
+    margin-bottom: 38px;
+    font-size: 24px;
+    line-height: 1.67;
+    text-align: center;
+  }
+
+  & p {
+    font-size: 14px;
+    line-height: 1.86;
+
+    // mobile setting
+    max-width: 640px;
+    margin: auto;
+  }
+}
+
+// .message PC version setting
+@media (min-width: 900px) {
+  .message {
+    padding: 81px 0;
+  }
+
+  .message h2 {
+    font-size: 36px;
+    line-height: 1.33;
+  }
+}
+
+// .message mobile version setting 
+@media (min-width: 374px) {
+  .message h2 {
+    font-size: 20px;
+  }
+}
+
+// service
+.service {
+  padding: 67px 0;
+  text-align: center;
+
+  & h2 {
+    display: inline-block;
+    margin-bottom: 16px;
+    padding-bottom: 9px;
+
+    // dotted under line 
+    border-bottom: dotted 2px currentColor;
+
+    font-size: 24px;
+    color: #2e5180;
+  }
+
+  & h2+p {
+    color: #2e5180;
+    font-size: 16px;
+  }
+}
+
+// .service PC setting
+@media (min-width: 900px) {
+  .service {
+    padding: 95px 0 87px;
+  }
+
+  .service h2 {
+    font-size: 36px;
+  }
+}
+
+// service detail
+.detail {
+  margin-top: 53px;
+  color: #333;
+
+  &:not(:last-child) {
+    margin-bottom: 67px;
+  }
+
+  & h3 {
+    margin-bottom: 17px;
+    font-size: 20px;
+    line-height: 1.75;
+  }
+
+  & p {
+    max-width: 264px;
+    margin: 0 auto 25px;
+    font-size: 12px;
+    line-height: 2;
+  }
+
+  & figure {
+    height: 246px;
+    margin-bottom: 22px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  & .office figure {
+    background-image: url(../img/office.jpg);
+  }
+
+  & .manage figure {
+    background-image: url(../img/manage.jpg);
+  }
+
+  & .research figure {
+    background-image: url(../img/research.jpg);
+  }
+}
+
+// .detail figure {
+//   height: 246px;
+//   margin-bottom: 22px;
+//   background-position: center;
+//   background-size: cover;
+// }
+
+// .detail .office figure {
+//   background-image: url(../img/office.jpg);
+// }
