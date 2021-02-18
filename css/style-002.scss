@@ -334,4 +334,34 @@ not all and (-ms-high-contrast: none) {
     font-size: 12px;
     line-height: 2;
   }
+
+  & figure {
+    height: 246px;
+    margin-bottom: 22px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  & .office figure {
+    background-image: url(../img/office.jpg);
+  }
+
+  & .manage figure {
+    background-image: url(../img/manage.jpg);
+  }
+
+  & .research figure {
+    background-image: url(../img/research.jpg);
+  }
 }
+
+// .detail figure {
+//   height: 246px;
+//   margin-bottom: 22px;
+//   background-position: center;
+//   background-size: cover;
+// }
+
+// .detail .office figure {
+//   background-image: url(../img/office.jpg);
+// }

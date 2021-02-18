@@ -292,4 +292,23 @@ a::hover {
   font-size: 12px;
   line-height: 2;
 }
+
+.detail figure {
+  height: 246px;
+  margin-bottom: 22px;
+  background-position: center;
+  background-size: cover;
+}
+
+.detail .office figure {
+  background-image: url(../img/office.jpg);
+}
+
+.detail .manage figure {
+  background-image: url(../img/manage.jpg);
+}
+
+.detail .research figure {
+  background-image: url(../img/research.jpg);
+}
 /*# sourceMappingURL=style-002.css.map */
