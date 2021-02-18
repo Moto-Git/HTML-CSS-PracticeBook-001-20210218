@@ -7,6 +7,11 @@
   margin: 0 auto;
 }
 
+.container {
+  width: 91%;
+  max-width: 1240px;
+}
+
 body,
 h1,
 h2,
@@ -52,6 +57,10 @@ a::hover {
       -ms-flex-align: center;
           align-items: center;
   height: 74px;
+}
+
+.header .container {
+  height: 100px;
 }
 
 .site {

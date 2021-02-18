@@ -10,9 +10,16 @@ $cWhite: #ffffff;
   font-family: "Noto Sans JP", sans-serif;
 }
 
+// overall width 
 .container {
   width: 84%;
   margin: 0 auto;
+}
+
+// container width 1240px
+.container {
+  width: 91%;
+  max-width: 1240px;
 }
 
 // Reset Normalize Sanitize
@@ -69,6 +76,10 @@ a {
   height: 74px;
 }
 
+// header height
+.header .container {
+  height: 100px;
+}
 
 .site {
   // side by side
