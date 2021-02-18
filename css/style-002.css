@@ -146,6 +146,19 @@ a::hover {
   background-image: url(../img/hero.jpg);
   background-position: center;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero .catch {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 33px 0;
+  background-color: rgba(255, 255, 255, 0.76);
 }
 
 .hero img {
