@@ -233,3 +233,21 @@ not all and (-ms-high-contrast: none) {
     max-width: 637.78px;
   }
 }
+
+// message
+.message {
+  background-color: #2e5180;
+  color: #fff;
+
+  & h2 {
+    margin-bottom: 38px;
+    font-size: 24px;
+    line-height: 1.67;
+    text-align: center;
+  }
+
+  & p {
+    font-size: 14px;
+    line-height: 1.86;
+  }
+}
