@@ -312,3 +312,26 @@ not all and (-ms-high-contrast: none) {
     font-size: 36px;
   }
 }
+
+// service detail
+.detail {
+  margin-top: 53px;
+  color: #333;
+
+  &:not(:last-child) {
+    margin-bottom: 67px;
+  }
+
+  & h3 {
+    margin-bottom: 17px;
+    font-size: 20px;
+    line-height: 1.75;
+  }
+
+  & p {
+    max-width: 264px;
+    margin: 0 auto 25px;
+    font-size: 12px;
+    line-height: 2;
+  }
+}

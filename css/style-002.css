@@ -270,4 +270,26 @@ a::hover {
     font-size: 36px;
   }
 }
+
+.detail {
+  margin-top: 53px;
+  color: #333;
+}
+
+.detail:not(:last-child) {
+  margin-bottom: 67px;
+}
+
+.detail h3 {
+  margin-bottom: 17px;
+  font-size: 20px;
+  line-height: 1.75;
+}
+
+.detail p {
+  max-width: 264px;
+  margin: 0 auto 25px;
+  font-size: 12px;
+  line-height: 2;
+}
 /*# sourceMappingURL=style-002.css.map */
