@@ -236,7 +236,10 @@ not all and (-ms-high-contrast: none) {
 
 // message
 .message {
+  // view easy to see
   padding: 67px 0;
+
+  // message setting
   background-color: #2e5180;
   color: #fff;
 
@@ -250,5 +253,21 @@ not all and (-ms-high-contrast: none) {
   & p {
     font-size: 14px;
     line-height: 1.86;
+
+    // mobile setting
+    max-width: 640px;
+    margin: auto;
+  }
+}
+
+// .message PC version setting
+@media (min-width: 900px) {
+  .message {
+    padding: 81px 0;
+  }
+
+  .message h2 {
+    font-size: 36px;
+    line-height: 1.33;
   }
 }

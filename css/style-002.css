@@ -223,5 +223,17 @@ a::hover {
 .message p {
   font-size: 14px;
   line-height: 1.86;
+  max-width: 640px;
+  margin: auto;
+}
+
+@media (min-width: 900px) {
+  .message {
+    padding: 81px 0;
+  }
+  .message h2 {
+    font-size: 36px;
+    line-height: 1.33;
+  }
 }
 /*# sourceMappingURL=style-002.css.map */
