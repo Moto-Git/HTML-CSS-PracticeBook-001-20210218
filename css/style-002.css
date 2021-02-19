@@ -391,9 +391,13 @@ a::hover {
 
 @media (min-width: 900px) {
   .contact {
+    padding: 0;
     background: none;
   }
   .contact .container {
+    padding: 96px 9% 62px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     background-color: #eef4f8;
   }
   .contact h2 {

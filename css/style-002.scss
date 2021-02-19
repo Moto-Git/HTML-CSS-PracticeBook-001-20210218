@@ -439,10 +439,13 @@ not all and (-ms-high-contrast: none) {
 
 @media(min-width: 900px) {
   .contact {
+    padding: 0;
     background: none;
   }
 
   .contact .container {
+    padding: 96px 9% 62px;
+    box-sizing: border-box;
     background-color: #eef4f8;
   }
 
