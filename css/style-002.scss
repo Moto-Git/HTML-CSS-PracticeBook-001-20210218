@@ -406,4 +406,14 @@ not all and (-ms-high-contrast: none) {
     height: 360px;
     margin-bottom: 33px;
   }
+
+  // PC button position
+  .detail {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .detail .btn {
+    margin-top: auto;
+  }
 }
