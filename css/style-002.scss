@@ -186,60 +186,86 @@ a {
 
 // nav menu
 // nav mobile
-html.open,
-.open body {
-  height: 100%;
-  overflow: hidden;
+@media(max-width: 899px) {
+
+  html.open,
+  .open body {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .open .form {
+    display: none;
+  }
+
+  .open nav {
+    left: 0;
+  }
+
+  .header {
+    position: relative;
+  }
+
+  .nav {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+
+    // nav position
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: left 0.5s;
+
+    & ul {
+      list-style: none;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    & li:not(:last-child) {
+      margin-bottom: 40px;
+    }
+
+    & .btn {
+      color: inherit;
+    }
+  }
+
+  // overlay setting
+  html,
+  body {
+    overflow-x: hidden;
+  }
 }
 
-.open .form {
-  display: none;
-}
+// nav menu PC setting
+@media(max-width: 900px) {
+  .nav-button {
+    display: none;
+  }
 
-.open nav {
-  left: 0;
-}
-
-.header {
-  position: relative;
-}
-
-.nav {
-  position: absolute;
-  top: 0;
-  left: 100%;
-  width: 100%;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.8);
-  color: #fff;
-
-  // nav position
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  transition: left 0.5s;
-
-  & ul {
+  .nav ul {
+    display: flex;
+    align-items: center;
     list-style: none;
-    font-weight: bold;
-    text-align: center;
+    color: #333;
   }
 
-  & li:not(:last-child) {
-    margin-bottom: 40px;
+  .nav li:not(:last-child) {
+    margin-right: 23px;
   }
 
-  & .btn {
-    color: inherit;
+  .nav .btn {
+    width: 148px;
+    border-color: #cdd6dd;
   }
 }
-
-html,
-body {
-  overflow-x: hidden;
-}
-
 
 // hero
 
