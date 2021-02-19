@@ -300,15 +300,15 @@ a::hover {
   background-size: cover;
 }
 
-.detail .office figure {
+.detail.office figure {
   background-image: url(../img/office.jpg);
 }
 
-.detail .manage figure {
+.detail.manage figure {
   background-image: url(../img/manage.jpg);
 }
 
-.detail .research figure {
+.detail.reserch figure {
   background-image: url(../img/research.jpg);
 }
 /*# sourceMappingURL=style-002.css.map */

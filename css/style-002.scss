@@ -342,15 +342,15 @@ not all and (-ms-high-contrast: none) {
     background-size: cover;
   }
 
-  & .office figure {
+  &.office figure {
     background-image: url(../img/office.jpg);
   }
 
-  & .manage figure {
+  &.manage figure {
     background-image: url(../img/manage.jpg);
   }
 
-  & .research figure {
+  &.reserch figure {
     background-image: url(../img/research.jpg);
   }
 }
