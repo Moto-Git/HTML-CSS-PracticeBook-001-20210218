@@ -346,5 +346,18 @@ a::hover {
   .detail:not(:last-child) {
     margin-bottom: 0;
   }
+  .detail h3 {
+    margin-bottom: 26px;
+    font-size: 30px;
+    line-height: 1.4;
+  }
+  .detail p {
+    width: 78%;
+    max-width: none;
+  }
+  .detail figure {
+    height: 360px;
+    margin-bottom: 33px;
+  }
 }
 /*# sourceMappingURL=style-002.css.map */
