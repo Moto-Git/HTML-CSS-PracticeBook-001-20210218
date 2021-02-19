@@ -544,4 +544,23 @@ not all and (-ms-high-contrast: none) {
     font-size: 12px;
     line-height: 2;
   }
+
+  // sns setting
+  & .sns {
+    // side by side
+    display: flex;
+
+    margin-left: 61px;
+    list-style: none;
+
+    & li:not(:first-child) {
+      margin-left: 25px;
+    }
+
+    // sns logo size
+    & img {
+      width: 35px;
+    }
+  }
+
 }
