@@ -462,6 +462,16 @@ not all and (-ms-high-contrast: none) {
     box-sizing: border-box;
     border-radius: 0;
     -webkit-appearance: none;
+
+    // writing setting
+    color: #333;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+  }
+
+  & ::placeholder {
+    color: #cdd6dd;
+    opacity: 1;
   }
 
   & textarea {
