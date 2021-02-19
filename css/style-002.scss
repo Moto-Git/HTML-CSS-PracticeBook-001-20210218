@@ -561,6 +561,7 @@ not all and (-ms-high-contrast: none) {
     & img {
       width: 35px;
     }
+
   }
 }
 
@@ -584,5 +585,9 @@ not all and (-ms-high-contrast: none) {
     margin: 22px 0 0 77px;
   }
 
+  .footer .sns {
+    height: 59px;
+    align-items: center;
+  }
 
 }

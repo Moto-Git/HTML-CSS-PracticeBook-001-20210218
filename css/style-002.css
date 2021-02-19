@@ -545,5 +545,11 @@ a::hover {
   .footer .add {
     margin: 22px 0 0 77px;
   }
+  .footer .sns {
+    height: 59px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 /*# sourceMappingURL=style-002.css.map */
