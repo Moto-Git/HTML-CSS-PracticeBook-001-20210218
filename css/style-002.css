@@ -527,6 +527,12 @@ a::hover {
 }
 
 @media (min-width: 900px) {
+  .footer {
+    margin-top: -48px;
+    padding: 105px 0 88px;
+    position: relative;
+    z-index: -1;
+  }
   .footer .container {
     display: -webkit-box;
     display: -ms-flexbox;
