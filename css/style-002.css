@@ -502,4 +502,11 @@ a::hover {
   color: #fff;
   font-size: 16px;
 }
+
+.footer .add {
+  margin: 20px 0 36px 61px;
+  color: #fff;
+  font-size: 12px;
+  line-height: 2;
+}
 /*# sourceMappingURL=style-002.css.map */
