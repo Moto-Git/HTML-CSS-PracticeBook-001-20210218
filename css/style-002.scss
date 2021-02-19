@@ -444,9 +444,25 @@ not all and (-ms-high-contrast: none) {
   }
 
   .contact .container {
+    // side by side setting
+    display: flex;
+    justify-content: space-between;
+
+    // normal setting
     padding: 96px 9% 62px;
     box-sizing: border-box;
     background-color: #eef4f8;
+  }
+
+  & .text {
+    flex: 0 0 auto;
+  }
+
+  .form {
+    flex: 1 1 auto;
+    max-width: 457px;
+    margin-left: 1em;
+    margin-top: 0;
   }
 
   .contact h2 {

@@ -395,10 +395,29 @@ a::hover {
     background: none;
   }
   .contact .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 96px 9% 62px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     background-color: #eef4f8;
+  }
+  .text {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+  }
+  .form {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    max-width: 457px;
+    margin-left: 1em;
+    margin-top: 0;
   }
   .contact h2 {
     font-size: 36px;
