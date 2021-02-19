@@ -185,6 +185,25 @@ body {
   height: 100vh;
   background: rgba(0, 0, 0, 0.8);
   color: #fff;
+
+  // nav position
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & ul {
+    list-style: none;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  & li:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  & .btn {
+    color: inherit;
+  }
 }
 
 
