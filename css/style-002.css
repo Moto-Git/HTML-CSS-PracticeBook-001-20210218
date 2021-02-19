@@ -452,4 +452,10 @@ a::hover {
   cursor: pointer;
   -webkit-appearance: none;
 }
+
+@media (min-width: 900px) {
+  .form .btn {
+    width: 274px;
+  }
+}
 /*# sourceMappingURL=style-002.css.map */

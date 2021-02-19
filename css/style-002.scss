@@ -488,3 +488,9 @@ not all and (-ms-high-contrast: none) {
     -webkit-appearance: none;
   }
 }
+
+@media(min-width:900px) {
+  .form .btn {
+    width: 274px;
+  }
+}
