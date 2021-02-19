@@ -355,13 +355,17 @@ not all and (-ms-high-contrast: none) {
   }
 }
 
-// .detail figure {
-//   height: 246px;
-//   margin-bottom: 22px;
-//   background-position: center;
-//   background-size: cover;
-// }
-
-// .detail .office figure {
-//   background-image: url(../img/office.jpg);
-// }
+// detail button
+.btn {
+  display: block;
+  width: 208px;
+  margin: 0 auto;
+  padding: 11px 11px 13px;
+  box-sizing: border-box;
+  border: solid 2px currentColor;
+  border-radius: 24px;
+  color: #2e5180;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}

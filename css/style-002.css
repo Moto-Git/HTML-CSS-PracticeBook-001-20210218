@@ -311,4 +311,19 @@ a::hover {
 .detail.reserch figure {
   background-image: url(../img/research.jpg);
 }
+
+.btn {
+  display: block;
+  width: 208px;
+  margin: 0 auto;
+  padding: 11px 11px 13px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: solid 2px currentColor;
+  border-radius: 24px;
+  color: #2e5180;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
 /*# sourceMappingURL=style-002.css.map */
