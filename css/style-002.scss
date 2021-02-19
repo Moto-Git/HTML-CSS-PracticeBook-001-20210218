@@ -369,3 +369,23 @@ not all and (-ms-high-contrast: none) {
   font-weight: bold;
   text-align: center;
 }
+
+@media (min-width: 900px) {
+  .details {
+    display: flex;
+    margin-top: 75px;
+  }
+
+  .detail {
+    flex: 1;
+    margin-right: 3.22%;
+  }
+
+  .detail:first-child {
+    margin-left: 3.22%;
+  }
+
+  .detail:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
