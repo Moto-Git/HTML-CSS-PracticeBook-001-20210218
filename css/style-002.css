@@ -398,4 +398,25 @@ a::hover {
     line-height: 1.86;
   }
 }
+
+.form {
+  margin-top: 46px;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+  width: 100%;
+  margin-bottom: 17px;
+  padding: 12px 20px 14px;
+  border: solid 1px #cdd6dd;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+
+.form textarea {
+  height: 150px;
+}
 /*# sourceMappingURL=style-002.css.map */

@@ -447,3 +447,24 @@ not all and (-ms-high-contrast: none) {
     line-height: 1.86;
   }
 }
+
+// form setting
+.form {
+  margin-top: 46px;
+
+  & input[type="text"],
+  & input[type="email"],
+  & textarea {
+    width: 100%;
+    margin-bottom: 17px;
+    padding: 12px 20px 14px;
+    border: solid 1px #cdd6dd;
+    box-sizing: border-box;
+    border-radius: 0;
+    -webkit-appearance: none;
+  }
+
+  & textarea {
+    height: 150px;
+  }
+}
