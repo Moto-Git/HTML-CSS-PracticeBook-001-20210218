@@ -438,6 +438,14 @@ not all and (-ms-high-contrast: none) {
 }
 
 @media(min-width: 900px) {
+  .contact {
+    background: none;
+  }
+
+  .contact .container {
+    background-color: #eef4f8;
+  }
+
   .contact h2 {
     font-size: 36px;
   }
