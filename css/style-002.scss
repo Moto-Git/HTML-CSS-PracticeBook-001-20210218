@@ -562,5 +562,27 @@ not all and (-ms-high-contrast: none) {
       width: 35px;
     }
   }
+}
+
+// footer PC setting
+@media(min-width: 900px) {
+  .footer .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer .site img {
+    width: 59px;
+    margin-right: 18px;
+  }
+
+  .footer .site .corp {
+    font-size: 20px;
+  }
+
+  .footer .add {
+    margin: 22px 0 0 77px;
+  }
+
 
 }
