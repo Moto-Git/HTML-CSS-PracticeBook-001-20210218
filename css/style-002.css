@@ -487,4 +487,12 @@ a::hover {
     width: 274px;
   }
 }
+
+.footer {
+  background-color: #2e5180;
+}
+
+.footer .site .corp {
+  color: #fff;
+}
 /*# sourceMappingURL=style-002.css.map */

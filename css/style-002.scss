@@ -521,3 +521,13 @@ not all and (-ms-high-contrast: none) {
     width: 274px;
   }
 }
+
+// footer
+
+.footer {
+  background-color: #2e5180;
+
+  & .site .corp {
+    color: #fff;
+  }
+}
