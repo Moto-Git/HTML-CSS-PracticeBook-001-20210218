@@ -422,4 +422,28 @@ not all and (-ms-high-contrast: none) {
 .contact {
   padding: 62px 0;
   background-color: #eef4f8;
+  color: #333;
+
+  & h2 {
+    margin-bottom {
+      margin-bottom: 42px;
+      font-size: 24px;
+    }
+
+    & h2+p {
+      font-size: 12px;
+      line-height: 2.17;
+    }
+  }
+}
+
+@media(min-width: 900px) {
+  .contact h2 {
+    font-size: 36px;
+  }
+
+  .contact h2+p {
+    font-size: 14px;
+    line-height: 1.86;
+  }
 }
