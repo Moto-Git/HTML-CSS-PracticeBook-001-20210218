@@ -489,10 +489,17 @@ a::hover {
 }
 
 .footer {
+  padding: 38px 0 56px;
   background-color: #2e5180;
+}
+
+.footer .footer .site img {
+  width: 47px;
+  margin-right: 14px;
 }
 
 .footer .site .corp {
   color: #fff;
+  font-size: 16px;
 }
 /*# sourceMappingURL=style-002.css.map */

@@ -525,9 +525,16 @@ not all and (-ms-high-contrast: none) {
 // footer
 
 .footer {
+  padding: 38px 0 56px;
   background-color: #2e5180;
+
+  .footer .site img {
+    width: 47px;
+    margin-right: 14px;
+  }
 
   & .site .corp {
     color: #fff;
+    font-size: 16px;
   }
 }
