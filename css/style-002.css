@@ -132,6 +132,8 @@ a::hover {
   background-color: currentColor;
   -webkit-transform: translateY(5px);
           transform: translateY(5px);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .nav-button::before {
@@ -139,6 +141,23 @@ a::hover {
           transform: translateY(-5px);
   -webkit-box-shadow: 0 6px currentColor;
           box-shadow: 0 6px currentColor;
+}
+
+.nav-button {
+  z-index: 1000;
+  color: #fff;
+}
+
+.nav-button::before {
+  -webkit-transform: translateY(1px) rotate(45deg);
+          transform: translateY(1px) rotate(45deg);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.nav-button::after {
+  -webkit-transform: translateY(-1px) rotate(-45deg);
+          transform: translateY(-1px) rotate(-45deg);
 }
 
 html,

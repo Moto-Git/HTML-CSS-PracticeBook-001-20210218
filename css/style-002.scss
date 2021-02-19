@@ -149,6 +149,7 @@ a {
   cursor: pointer;
   color: #2e5180;
 
+
   // hamburger button view
   &::before,
   &::after {
@@ -157,6 +158,8 @@ a {
     height: 2px;
     background-color: currentColor;
     transform: translateY(5px);
+    // menu timing
+    transition: 0.3s ease-in-out;
   }
 
   &::before {
@@ -164,6 +167,22 @@ a {
     box-shadow: 0 6px currentColor;
   }
 }
+
+.nav-button {
+  z-index: 1000;
+  color: #fff;
+
+  &::before {
+    transform:
+      translateY(1px) rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: translateY(-1px) rotate(-45deg);
+  }
+}
+
 
 // nav menu
 // nav mobile
