@@ -149,6 +149,7 @@ a {
   cursor: pointer;
   color: #2e5180;
 
+
   // hamburger button view
   &::before,
   &::after {
@@ -157,14 +158,114 @@ a {
     height: 2px;
     background-color: currentColor;
     transform: translateY(5px);
+    // menu timing
+    transition: 0.3s ease-in-out;
   }
 
   &::before {
     transform: translateY(-5px);
     box-shadow: 0 6px currentColor;
   }
+}
 
-  // hamburger button view end
+.open .nav-button {
+  z-index: 1000;
+  color: #fff;
+
+  &::before {
+    transform:
+      translateY(1px) rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: translateY(-1px) rotate(-45deg);
+  }
+}
+
+
+// nav menu
+// nav mobile
+@media(max-width: 899px) {
+
+  html.open,
+  .open body {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .open .form {
+    display: none;
+  }
+
+  .open nav {
+    left: 0;
+  }
+
+  .header {
+    position: relative;
+  }
+
+  .nav {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+
+    // nav position
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: left 0.5s;
+
+    & ul {
+      list-style: none;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    & li:not(:last-child) {
+      margin-bottom: 40px;
+    }
+
+    & .btn {
+      color: inherit;
+    }
+  }
+
+  // overlay setting
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+}
+
+// nav menu PC setting
+@media(max-width: 900px) {
+  .nav-button {
+    display: none;
+  }
+
+  .nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    color: #333;
+  }
+
+  .nav li:not(:last-child) {
+    margin-right: 23px;
+  }
+
+  .nav .btn {
+    width: 148px;
+    border-color: #cdd6dd;
+  }
 }
 
 // hero
@@ -342,26 +443,263 @@ not all and (-ms-high-contrast: none) {
     background-size: cover;
   }
 
-  & .office figure {
+  &.office figure {
     background-image: url(../img/office.jpg);
   }
 
-  & .manage figure {
+  &.manage figure {
     background-image: url(../img/manage.jpg);
   }
 
-  & .research figure {
+  &.reserch figure {
     background-image: url(../img/research.jpg);
   }
 }
 
-// .detail figure {
-//   height: 246px;
-//   margin-bottom: 22px;
-//   background-position: center;
-//   background-size: cover;
-// }
+// detail button
+.btn {
+  display: block;
+  width: 208px;
+  margin: 0 auto;
+  padding: 11px 11px 13px;
+  box-sizing: border-box;
+  border: solid 2px currentColor;
+  border-radius: 24px;
+  color: #2e5180;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
 
-// .detail .office figure {
-//   background-image: url(../img/office.jpg);
-// }
+// .details PC version setting
+
+@media (min-width: 900px) {
+  .details {
+    display: flex;
+    margin-top: 75px;
+  }
+
+  .detail {
+    flex: 1;
+    margin-right: 3.22%;
+  }
+
+  .detail:first-child {
+    margin-left: 3.22%;
+  }
+
+  .detail:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .detail h3 {
+    margin-bottom: 26px;
+    font-size: 30px;
+    line-height: 1.4;
+  }
+
+  .detail p {
+    width: 78%;
+    max-width: none;
+  }
+
+  .detail figure {
+    height: 360px;
+    margin-bottom: 33px;
+  }
+
+  // PC button position
+  .detail {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .detail .btn {
+    margin-top: auto;
+  }
+}
+
+// contact
+.contact {
+  padding: 62px 0;
+  background-color: #eef4f8;
+  color: #333;
+
+  & h2 {
+    margin-bottom {
+      margin-bottom: 42px;
+      font-size: 24px;
+    }
+
+    & h2+p {
+      font-size: 12px;
+      line-height: 2.17;
+    }
+  }
+}
+
+@media(min-width: 900px) {
+  .contact {
+    padding: 0;
+    background: none;
+  }
+
+  .contact .container {
+    // side by side setting
+    display: flex;
+    justify-content: space-between;
+
+    // normal setting
+    padding: 96px 9% 62px;
+    box-sizing: border-box;
+    background-color: #eef4f8;
+  }
+
+  & .text {
+    flex: 0 0 auto;
+  }
+
+  .form {
+    flex: 1 1 auto;
+    max-width: 457px;
+    margin-left: 1em;
+    margin-top: 0;
+  }
+
+  .contact h2 {
+    font-size: 36px;
+  }
+
+  .contact h2+p {
+    font-size: 14px;
+    line-height: 1.86;
+  }
+}
+
+// form setting
+.form {
+  margin-top: 46px;
+
+  & input[type="text"],
+  & input[type="email"],
+  & textarea {
+    width: 100%;
+    margin-bottom: 17px;
+    padding: 12px 20px 14px;
+    border: solid 1px #cdd6dd;
+    box-sizing: border-box;
+    border-radius: 0;
+    -webkit-appearance: none;
+
+    // writing setting
+    color: #333;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+  }
+
+  & ::placeholder {
+    color: #cdd6dd;
+    opacity: 1;
+  }
+
+  & textarea {
+    height: 150px;
+  }
+
+  & .btn {
+    width: 100%;
+    margin: 0;
+    border: none;
+    background-color: #2e5180;
+    color: #fff;
+    cursor: pointer;
+    -webkit-appearance: none;
+  }
+}
+
+@media(min-width:900px) {
+  .form .btn {
+    width: 274px;
+  }
+}
+
+// footer
+
+.footer {
+  padding: 38px 0 56px;
+  background-color: #2e5180;
+
+  .footer .site img {
+    width: 47px;
+    margin-right: 14px;
+  }
+
+  & .site .corp {
+    color: #fff;
+    font-size: 16px;
+  }
+
+  & .add {
+    margin: 20px 0 36px 61px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 2;
+  }
+
+  // sns setting
+  & .sns {
+    // side by side
+    display: flex;
+
+    margin-left: 61px;
+    list-style: none;
+
+    & li:not(:first-child) {
+      margin-left: 25px;
+    }
+
+    // sns logo size
+    & img {
+      width: 35px;
+    }
+
+  }
+}
+
+// footer PC setting
+@media(min-width: 900px) {
+
+  // footer stack
+  .footer {
+    margin-top: -48px;
+    padding: 105px 0 88px;
+    position: relative;
+    z-index: -1;
+  }
+
+
+
+  .footer .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer .site img {
+    width: 59px;
+    margin-right: 18px;
+  }
+
+  .footer .site .corp {
+    font-size: 20px;
+  }
+
+  .footer .add {
+    margin: 22px 0 0 77px;
+  }
+
+  .footer .sns {
+    height: 59px;
+    align-items: center;
+  }
+
+}

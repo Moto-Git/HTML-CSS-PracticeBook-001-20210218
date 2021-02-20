@@ -23,16 +23,25 @@
       <div class="site">
         <img src="../img/bb.svg" alt="">
         <div>
-          <p class="corp">BBアシスタントカンパニー</p>
+          <p class="corp">○○○○○○カンパニー</p>
           <p class="desc">確かなスタッフによる業務サポート</p>
         </div>
       </div>
-      <button type="button" class="nav-button">
+      <!-- nav -->
+      <nav class="nav">
+        <ul>
+          <li><a href="#">会社情報</a></li>
+          <li><a href="#">サービス</a></li>
+          <li><a href="#" class="btn">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <!-- JavaScript nav -->
+      <button type="button" class="nav-button" onClick="navFunc()">
         <span class="sr-only">MENU</span>
       </button>
     </div>
   </header>
-  <!-- section -->
+  <!-- hero -->
   <section class="hero">
     <div class="catch">
       <div class="container">
@@ -43,7 +52,7 @@
       </div>
     </div>
   </section>
-
+  <!-- message -->
   <section class="message">
     <div class="container">
       <h2>ビジネスアシスタントとして<br>
@@ -58,7 +67,7 @@
       </p>
     </div>
   </section>
-
+  <!-- service -->
   <section class="service">
     <div class="container">
       <h2>アシスタントサービス</h2>
@@ -76,7 +85,7 @@
           デジタルトランスフォーメーションなど、
           様々なおフィル業務のサポートを行います。
         </p>
-        <a href="#">OFFICE</a>
+        <a href="#" class="btn">OFFICE</a>
       </article>
       <article class="detail manage">
         <figure></figure>
@@ -89,7 +98,7 @@
           案件の進捗管理、
           リーダーのアシスタントサポートなどを行います。
         </p>
-        <a href="#">MANAGEMENT</a>
+        <a href="#" class="btn">MANAGEMENT</a>
       </article>
       <article class="detail reserch">
         <figure></figure>
@@ -101,10 +110,77 @@
           各種事業の立ち上げ、運営に係る調査・研究のサポートや、
           特定分野の専門家との提携のお手伝いなどを行います。
         </p>
-        <a href="#">RESEARCH</a>
+        <a href="#" class="btn">RESEARCH</a>
       </article>
     </div>
   </section>
+  <!-- contact -->
+  <section class="contact">
+    <div class="container">
+      <div class="text">
+        <h2>お問い合わせ</h2>
+        <p>
+          もっと業務を効率化したい<br>
+          マネージメントの煩わしさから開放されたい<br>
+          本業に集中したいなどなど、<br>
+          些細なことでもお気軽にお問い合わせください。
+        </p>
+      </div>
+      <!-- form -->
+      <form action="" class="form">
+        <p>
+          <label>
+            <span class="sr-only">名前</span>
+            <input type="text" name="name" placeholder="名前">
+          </label>
+        </p>
+        <p>
+          <label for="">
+            <span class="sr-only">メールアドレス</span>
+            <input type="email" name="email" placeholder="メールアドレス">
+          </label>
+        </p>
+        <p>
+          <label for="">
+            <span class="sr-only">メッセージ</span>
+            <textarea name="msg" placeholder="メッセージを入力してください" id="" cols="30" rows="10"></textarea>
+          </label>
+        </p>
+        <p>
+          <input type="submit" value="送信" class="btn">
+        </p>
+      </form>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="info">
+        <div class="site">
+          <img src="../img/bb-white.svg" alt="">
+          <div>
+            <p class="corp">○○○○○○カンパニー</p>
+          </div>
+        </div>
+        <p class="add">
+          〒001-0001<br>
+          北海道中央区南53 条東西ビル8F<br>
+          0001-1234-5678
+        </p>
+      </div>
+      <ul class="sns">
+        <li><a href="#"><img src="../img/logo-twitter.svg" alt="Twitter"></a></li>
+        <li><a href="#"><img src="../img/logo-facebook.svg" alt="Facebook"></a></li>
+        <li><a href="#"><img src="../img/logo-instagram.svg" alt="Instagram"></a></li>
+      </ul>
+    </div>
+  </footer>
+  <!-- javascript script -->
+  <script>
+    function navFunc() {
+      document.querySelector('html').classList.toggle('open');
+    }
+  </script>
 </body>
 
 </html>
